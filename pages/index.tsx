@@ -24,7 +24,7 @@ export const getServerSideProps = async ({
   let response;
   try {
     response = await fetch(
-      process.env.NEXT_PUBLIC_BASE_URL + '/api/verifyStripe',
+      'https://de-e80ttqkyq-uripaka.vercel.app/' + '/api/verifyStripe',
       {
         method: 'POST',
         body: JSON.stringify(body),
